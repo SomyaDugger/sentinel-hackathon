@@ -1,0 +1,9 @@
+department_name,district,city_or_taluka,landmark,camera_type,status,rtsp_url,vms_vendor,retention_days,resolution,health_status,latitude,longitude
+Home Department,Ahmedabad,Maninagar,Swaminarayan Mandir Junction,ANPR,Active,rtsp://10.20.1.101:554/stream1,Hikvision,15,4K,Online,22.9931,72.6048
+Home Department,Ahmedabad,Navrangpura,Law Garden Cross Roads,PTZ,Active,rtsp://10.20.1.102:554/stream1,Milestone,15,1080p,Online,23.0333,72.5594
+RTO,Mehsana,Mehsana,Modhera Highway Checkpost,ANPR,Active,rtsp://10.20.2.101:554/stream1,Matrix,10,1080p,Online,23.5880,72.3693
+Home Department,Banaskantha,Palanpur,Abu Road Entry Gate,Fixed Bullet,Active,rtsp://10.20.3.101:554/stream1,Dahua,7,1080p,Online,24.1725,72.4324
+Food & Civil Supplies,Anand,Anand,Amul Dairy Circle,Dome,Active,rtsp://10.20.4.101:554/stream1,Custom ONVIF,10,1080p,Online,22.5565,72.9520
+Home Department,Navsari,Navsari,Dudhia Talav Chowk,Analog-Encoder,Active,rtsp://10.20.5.101:554/stream1,Custom ONVIF,7,720p,Degraded,20.9467,72.9520
+RTO,Bharuch,Bharuch,Golden Bridge Toll,ANPR,Active,rtsp://10.20.6.101:554/stream1,Hikvision,10,1080p,Online,21.6944,72.9957
+Home Department,Patan,Patan,Rani Ki Vav Heritage Gate,Fixed Bullet,Active,rtsp://10.20.7.101:554/stream1,Dahua,7,1080p,Online,23.8590,72.1266
