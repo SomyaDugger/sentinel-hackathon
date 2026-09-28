@@ -3,6 +3,7 @@ import sequelize from '../config/database';
 
 interface CameraAttributes {
   id: string;
+  camera_code: string | null;
   department_name: string;
   district: string;
   city_or_taluka: string;
@@ -20,7 +21,7 @@ interface CameraAttributes {
 interface CameraCreationAttributes
   extends Optional<
     CameraAttributes,
-    'id' | 'status' | 'retention_days' | 'health_status' | 'location' | 'resolution'
+    'id' | 'camera_code' | 'status' | 'retention_days' | 'health_status' | 'location' | 'resolution'
   > {}
 
 class Camera
@@ -28,6 +29,7 @@ class Camera
   implements CameraAttributes
 {
   public id!: string;
+  public camera_code!: string | null;
   public department_name!: string;
   public district!: string;
   public city_or_taluka!: string;
@@ -51,6 +53,11 @@ Camera.init(
       type: DataTypes.UUID,
       defaultValue: DataTypes.UUIDV4,
       primaryKey: true,
+    },
+    camera_code: {
+      type: DataTypes.STRING,
+      allowNull: true,
+      unique: true,
     },
     department_name: {
       type: DataTypes.STRING,
